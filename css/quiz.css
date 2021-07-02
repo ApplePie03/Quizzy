@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: hsl(208, 90%, 50%);
+}
+
+.title,
+.questionHeader,
+.questionBody {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.title {
+  font-size: clamp(1.4em, 10vw, 3em);
+}
+
+.questionHeader {
+  font-size: clamp(1em, 7vw, 2em);
+}
+
+.questionBody {
+  margin: 2em 1.5em 4em 1.5em;
+  text-align: center;
+  font-size: clamp(1.1em, 5vw, 1.5em);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1em;
+}
+
+.choice {
+  border: 2px solid white;
+  grid-column: 2/10;
+  text-align: center;
+  height: 35px;
+  padding: 4.5px;
+  transition: background-color 0.2s linear;
+}
+
+.choice:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: hsl(145, 84%, 34%);
+}
+
+.wrong {
+  background-color: hsl(0, 100%, 55%);
+}
+
+.choice1 {
+  grid-row: 1/2;
+}
+
+.choice2 {
+  grid-row: 2/3;
+}
+
+.choice3 {
+  grid-row: 3/4;
+}
+
+.choice4 {
+  grid-row: 4/5;
+}
+
+@media screen and (min-width: 768px) {
+  .choice {
+    grid-column: 3/9;
+  }
+}

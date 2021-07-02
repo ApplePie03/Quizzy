@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: hsl(208, 90%, 50%);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.header {
+  font-size: clamp(1.4em, 10vw, 3.5em);
+}
+
+.testResults {
+  margin: 0.5em 0 1em 0;
+  font-size: clamp(1.2em, 5vw, 1.8em);
+  font-weight: 600;
+}
+
+button {
+  font-size: clamp(1.2em, 5vw, 1.3em);
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 10vw;
+  background-color: white;
+  color: black;
+  min-width: 100px;
+}
